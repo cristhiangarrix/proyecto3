@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Ventas Informática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos movidos a archivo externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Fondo estilo placa PCB (SVG en patrón, solo visual) -->
+<div class="pcb-bg" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+        <defs>
+            <pattern id="pcbPattern" width="240" height="160" patternUnits="userSpaceOnUse">
+                <rect width="240" height="160" fill="#072a1f" />
+                <path d="M12 20h216M12 60h216M12 100h216M12 140h216" stroke="#0fbf7a" stroke-width="4" stroke-linecap="round" opacity="0.95" />
+                <path d="M40 0v24M80 40v24M160 80v24M200 120v24" stroke="#0fbf7a" stroke-width="3" opacity="0.85" />
+                <circle cx="12" cy="20" r="6" fill="#7ff2c1" />
+                <circle cx="12" cy="60" r="6" fill="#7ff2c1" />
+                <circle cx="12" cy="100" r="6" fill="#7ff2c1" />
+                <circle cx="12" cy="140" r="6" fill="#7ff2c1" />
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#pcbPattern)" />
+    </svg>
+</div>
+
+<header>
+    <div class="nav">
+        <div class="logo">JM Ventas Informática</div>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero seccion" id="inicio">
+    <div class="box">
+        <h1>Soluciones Tecnológicas Profesionales</h1>
+        <p>Venta de equipos informáticos, accesorios y soporte técnico con calidad y confianza.</p>
+    </div>
+</section>
+
+<section class="seccion" id="servicios">
+    <div class="box">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="card">
+                <img loading="lazy" alt="Venta de computadoras" src="imagenes/imagen01.png">
+                <h3>Venta de Computadoras</h3>
+                <p>PCs y laptops para trabajo, estudio y gaming.</p>
+            </div>
+            <div class="card">
+                <img loading="lazy" alt="Soporte técnico" src="imagenes/imagen02.png">
+                <h3>Soporte Técnico</h3>
+                <p>Mantenimiento y reparación de equipos.</p>
+            </div>
+            <div class="card">
+                <img loading="lazy" alt="Accesorios informáticos" src="imagenes/imagen03.png">
+                <h3>Accesorios</h3>
+                <p>Teclados, mouse, monitores y más.</p>
+            </div>
+            <div class="card">
+                <img loading="lazy" alt="Redes y conectividad" src="imagenes/imagen04.png">
+                <h3>Redes y Conectividad</h3>
+                <p>Instalación y configuración de redes cableadas e inalámbricas.</p>
+            </div>
+            <div class="card">
+                <img loading="lazy" alt="Instalación de software" src="imagenes/imagen05.png">
+                <h3>Instalación de Software</h3>
+                <p>Configuración de sistemas operativos y software profesional.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="seccion" id="galeria">
+    <div class="box">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <div class="card"><figure><img loading="lazy" alt="Tienda - PCs" src="data:image/jpeg;base64,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"><figcaption>Instalación y montaje</figcaption></figure></div>
+            <div class="card"><figure><img loading="lazy" alt="Soporte" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/... (truncated for brevity)"></figure></div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox modal -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <img alt="" id="lightbox-img">
+</div>
+
+<section class="seccion" id="contacto">
+    <div class="box">
+        <h2>Contacto</h2>
+        <form id="contact-form" class="contact" novalidate>
+            <input name="name" type="text" placeholder="Nombre" required>
+            <input name="email" type="email" placeholder="Correo" required>
+            <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+            <div id="contact-feedback" style="color: #ffefef; margin-bottom:12px; min-height:18px;"></div>
+            <button type="submit">Enviar</button>
+        </form>
+        <p style="font-size:13px; color:rgba(255,255,255,0.6); margin-top:10px;">Si quieres envío directo desde el sitio, añade tu endpoint Formspree en la variable <code>FORMSPREE_ENDPOINT</code> dentro del script.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 JM Ventas Informática</p>
+</footer>
+
+<!-- Navegación por anclas: script para mostrar una sección a la vez y resaltar menú -->
+<script>
+    (function(){
+        const links = Array.from(document.querySelectorAll('.menu a')).filter(a => !a.classList.contains('cta'));
+        const sections = document.querySelectorAll('.seccion');
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+
+        function setActiveLink(id){
+            links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+id));
+        }
+        function show(id){
+            sections.forEach(s => s.classList.remove('active'));
+            const el = document.getElementById(id);
+            if(el) el.classList.add('active');
+            setActiveLink(id);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        links.forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const target = a.getAttribute('href').replace('#','');
+                show(target);
+                history.replaceState(null,'', '#'+target);
+            });
+        });
+
+        // Lightbox for gallery images
+        document.querySelectorAll('.gallery .card img').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', () => {
+                lbImg.src = img.src;
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden','false');
+            });
+        });
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            lightbox.setAttribute('aria-hidden','true');
+            lbImg.src = '';
+        });
+
+        // Init
+        const initial = location.hash ? location.hash.replace('#','') : 'inicio';
+        show(initial);
+    })();
+</script>
+
+</body>
+</html>
